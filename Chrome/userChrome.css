@@ -1,0 +1,86 @@
+/* Hide sidebar header, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+    visibility: collapse;
+}
+#sidebar-box {
+    -moz-appearance: -moz-mac-vibrancy-dark !important;
+}
+
+/* HIDE FUCKING TAB BAR */
+#TabsToolbar { visibility: collapse !important; }
+
+/*SIDEBAR DARK*/
+#sidebar-search-container,
+#bookmarks-view,
+#historyTree,
+[lwt-sidebar] {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+
+/*remove sidebar border splitting bar and webpage*/
+#sidebar-splitter {
+  border: none !important;
+}
+#sidebar-box {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+#sidebar-box #sidebar-header {
+  border: none !important;
+}
+#sidebar-box #sidebar-header #sidebar-switcher-target {
+  transition: color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+#sidebar-box #sidebar-header #sidebar-switcher-target:hover,
+#sidebar-box #sidebar-header #sidebar-switcher-target.active {
+    background-color: rgb(40, 96, 142) !important;
+    color: #fff !important;
+}
+#sidebar-box #sidebar-header #sidebar-close {
+  fill-opacity: 0 !important;
+  color: #fff !important;
+  transition: color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+#sidebar-box #sidebar-header #sidebar-close:hover {
+  fill-opacity: 0 !important;
+    color: rgb(227, 31, 5) !important;
+}
+
+#sidebar-search-container #search-box {
+  -moz-appearance: none !important;
+  background-color: #444 !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  border-radius: 3px !important;
+  transition: background-color, border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+#sidebar-search-container #search-box:focus-within {
+  border-color: rgb(227, 31, 5)  !important;
+  background-color: #444 !important;
+}
+
+#sidebar-search-container #viewButton {
+  background-color: none !important;
+  border: none !important;
+  border-radius: 3px !important;
+  color: #fff !important;
+  transition: background-color, border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+#sidebar-search-container #viewButton:hover {
+  background-color: rgb(40, 96, 142) !important; 
+  color: #fff !important;
+}
+/*dark scrollbar in sidebar and other ui elements*/
+.panel-subview-body{
+  scrollbar-face-color: rgb(94, 94, 94);
+  scrollbar-track-color: rgb(57, 59, 65);
+  scrollbar-color: rgb(94, 94, 94) rgb(57, 59, 65);
+  scrollbar-width: thin;
+ }
+ #permList, scrollbar{
+  scrollbar-face-color: rgb(94, 94, 94);
+  scrollbar-track-color: rgb(57, 59, 65);
+  scrollbar-color: rgb(94, 94, 94) rgb(57, 59, 65);
+  scrollbar-width: thin;
+ }
