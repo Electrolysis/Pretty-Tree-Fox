@@ -1,86 +1,57 @@
-/* Hide sidebar header, when using Tree Style Tab. */
-#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
-    visibility: collapse;
-}
-#sidebar-box {
-    -moz-appearance: -moz-mac-vibrancy-dark !important;
-}
-
-/* HIDE FUCKING TAB BAR */
-#TabsToolbar { visibility: collapse !important; }
-
-/*SIDEBAR DARK*/
-#sidebar-search-container,
-#bookmarks-view,
-#historyTree,
-[lwt-sidebar] {
-  background-color: #444 !important;
-  color: #fff !important;
+/* Hide titlebar */
+#titlebar-secondary-buttonbox,
+#titlebar .toolbar-items,
+#titlebar .titlebar-spacer,
+.private-browsing-indicator,
+#toolbar-menubar,
+#tabbrowser-tabs {
+  display: none;
 }
 
-/*remove sidebar border splitting bar and webpage*/
-#sidebar-splitter {
-  border: none !important;
-}
-#sidebar-box {
-  background-color: #444 !important;
-  color: #fff !important;
-}
-#sidebar-box #sidebar-header {
-  border: none !important;
-}
-#sidebar-box #sidebar-header #sidebar-switcher-target {
-  transition: color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-}
-#sidebar-box #sidebar-header #sidebar-switcher-target:hover,
-#sidebar-box #sidebar-header #sidebar-switcher-target.active {
-    background-color: rgb(40, 96, 142) !important;
-    color: #fff !important;
-}
-#sidebar-box #sidebar-header #sidebar-close {
-  fill-opacity: 0 !important;
-  color: #fff !important;
-  transition: color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-}
-#sidebar-box #sidebar-header #sidebar-close:hover {
-  fill-opacity: 0 !important;
-    color: rgb(227, 31, 5) !important;
+#alltabs-button {
+  z-index: 9 !important;
+  display: block !important;
+  position: relative;
 }
 
-#sidebar-search-container #search-box {
-  -moz-appearance: none !important;
-  background-color: #444 !important;
-  border: 1px solid #fff !important;
-  color: #fff !important;
-  border-radius: 3px !important;
-  transition: background-color, border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
-}
-#sidebar-search-container #search-box:focus-within {
-  border-color: rgb(227, 31, 5)  !important;
-  background-color: #444 !important;
+/* Hide sidebar header */
+#sidebar-header {
+    display: none;
 }
 
-#sidebar-search-container #viewButton {
-  background-color: none !important;
-  border: none !important;
-  border-radius: 3px !important;
-  color: #fff !important;
-  transition: background-color, border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+/* Merge tabbar with window controls */
+#TabsToolbar {
+  margin-bottom: -34px !important;
 }
-#sidebar-search-container #viewButton:hover {
-  background-color: rgb(40, 96, 142) !important; 
-  color: #fff !important;
+
+#nav-bar {
+  margin-top: 12px;
 }
-/*dark scrollbar in sidebar and other ui elements*/
-.panel-subview-body{
-  scrollbar-face-color: rgb(94, 94, 94);
-  scrollbar-track-color: rgb(57, 59, 65);
-  scrollbar-color: rgb(94, 94, 94) rgb(57, 59, 65);
-  scrollbar-width: thin;
- }
- #permList, scrollbar{
-  scrollbar-face-color: rgb(94, 94, 94);
-  scrollbar-track-color: rgb(57, 59, 65);
-  scrollbar-color: rgb(94, 94, 94) rgb(57, 59, 65);
-  scrollbar-width: thin;
- }
+
+#nav-bar-customization-target {
+  padding-left: 68px;
+}
+
+.titlebar-buttonbox-container .titlebar-buttonbox {
+  margin-top: 4px !important;
+}
+
+#PanelUI-menu-button,
+#stop-reload-button,
+#nav-bar-customization-target > .toolbarbutton-1 {
+  margin-top: 2px !important;
+}
+
+/* Fixes for private mode */
+#main-window[privatebrowsingmode="temporary"] .titlebar-buttonbox-container .titlebar-buttonbox {
+/*   margin-top: 4px !important; */
+}
+
+/* #main-window:not([privatebrowsingmode])  */
+#urlbar-container #urlbar {
+  margin-top: 2px !important;
+}
+
+#main-window[privatebrowsingmode="temporary"] #PanelUI-menu-button > .toolbarbutton-badge-stack {
+  background-color: #25003E;
+}
