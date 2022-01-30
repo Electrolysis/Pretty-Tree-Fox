@@ -8,12 +8,6 @@
   display: none;
 }
 
-#alltabs-button {
-  z-index: 9 !important;
-  display: block !important;
-  position: relative;
-}
-
 /* Hide sidebar header */
 #sidebar-header {
     display: none;
@@ -21,7 +15,7 @@
 
 /* Merge tabbar with window controls */
 #TabsToolbar {
-  margin-bottom: -34px !important;
+  margin-bottom: -37px !important;
 }
 
 #nav-bar {
@@ -32,14 +26,14 @@
   padding-left: 68px;
 }
 
-.titlebar-buttonbox-container .titlebar-buttonbox {
+.titlebar-buttonbox-container.titlebar-buttonbox {
   margin-top: 4px !important;
 }
 
 #PanelUI-menu-button,
 #stop-reload-button,
 #nav-bar-customization-target > .toolbarbutton-1 {
-  margin-top: 2px !important;
+  margin-top: 3px !important;
 }
 
 /* Fixes for private mode */
@@ -49,7 +43,7 @@
 
 /* #main-window:not([privatebrowsingmode])  */
 #urlbar-container #urlbar {
-  margin-top: 2px !important;
+  margin-top: 3px !important;
 }
 
 #main-window[privatebrowsingmode="temporary"] #PanelUI-menu-button > .toolbarbutton-badge-stack {
