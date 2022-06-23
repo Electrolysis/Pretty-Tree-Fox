@@ -6,6 +6,8 @@
 
 For maximum comfort, turn off the window title bar and menu bar. The macOS version is coming soon.
 
+![Screenshot](/images/screenshot.png)
+
 ## Installation
 - Go to about:config and enable loading userchrome files. Change toolkit.legacyUserProfileCustomizations.stylesheets to true.
 - Copy Chrome folder into your profile folder (to view path, go to about:profiles)
