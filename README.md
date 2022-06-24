@@ -1,4 +1,4 @@
-# userChrome
+# Pretty Tree Fox
 ## _My userChrome.css for Firefox 80+ with Tree Style Tab extension_
 - Works nice on Windows 10 and 11!
 - Supports menu bar!
